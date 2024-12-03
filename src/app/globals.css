@@ -2,20 +2,207 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.main{
+  width: 100%;
+  height: 1078px;
+  background-color: #FDFBEE;
 }
+.homebg{
+  position: absolute;
+  top: 174px;
+  left: 83px;
+  width: 90%;
+}
+.object{
+  position: absolute;
+  top: 243.95px;
+  left: 670px;
+}
+.mainheading{
+  font-family: 'Roboto,sans-serif';
+  font-size: 69px;
+  font-weight: bolder;
+  color: #050C26;
+  position: absolute;
+  top: 348px;
+  left: 94px;
+}
+.orange{
+  color: #FF7426;
+ }
+ .mainpara{
+  font-family: 'Roboto,sans-serif';
+  font-size: 20px;
+  font-weight: normal;
+  color: #bababa;
+  position: absolute;
+  top: 553px;
+  left: 94px;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+ }
+ .secpage{
+  width:100%;
+  height: 900px;
+  background-color: #fff;
+ }
+ .sechead,.secpara{
+  font-family: 'Roboto,sans-serif';
+ 
+ }
+ .sechead{
+   color: #050C26;
+   font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  top: 1288px;
+  left: 673px;
   }
-}
+  .secpara{
+    font-size: 20px;
+  font-weight: normal;
+  color: #bababa;
+  position: absolute;
+  top: 1357px;
+  left: 607px;
+  }
+  .light{
+    position: absolute;
+    top: 1272px;
+    left: 94px;
+  }
+  .arrow{
+    position: absolute;
+    top: 1272px;
+    left: 1297px;
+  }
+  .thp{
+    width: 100%;
+    height: 636px;
+    position: absolute;
+    top: 2063px;
+    background-color: #FDFBEE;
+  }
+  .girl{
+    position: absolute;
+    top: 126px;
+    left: 124px;
+  }
+  .page2bg{
+    position: absolute;
+    top: 24px;
+    left: 20px;
+  }
+  .thphead{
+    left: 724px;
+    top: 122px;
+  }
+  .bg1,.bg2{
+width: 102px;
+height: 101px;
+background-color: #4D2C5E;
+border-radius: 23px;
+position: absolute;
+left: 724px;
+  }
+  .bg1,.heading3{
+    top: 374px;
+  }
+  .bg2,.heading4{
+    top: 509px;
+  }
+  .hrt{
+    margin: 25px auto;
+  }
+  .heading3,.heading4{
+     font-family: 'Roboto,sans-serif';
+    color: #050C26;
+   font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  left: 854px;
+  }
+  .para3,.para4{
+    font-family: 'Roboto,sans-serif';
+  font-size: 23px;
+  font-weight: normal;
+  color: #bababa;
+  position: absolute;
+  left: 854px;
+  }
+  .para3{
+    top:430px ;
+  }
+  .para4{
+    top: 560px;
+  }
+  .page4{
+    background-color: #fff;
+    width: 100%;
+    height: 636px;
+    position: absolute;
+    top: 2690px;
+    z-index: 0;
+  }
+  .girl{
+    z-index: 1;
+  }
+  .pg1{
+    top: 295px;
+    left: 594px;
+  }
+  .pg2{
+    top: 385px;
+left: 600px;
+  }
+  .pinkbrush{
+    position: absolute;
+    top:70px;
+    left: -28px;
+  }
+  .pinkbrush2{
+    position: absolute;
+    top:400px;
+    left: 1100px;
+    z-index: 0;
+  }
+  .pg3{
+    top: 895px;
+    left: 694px;
+  }
+  .pg4{
+     top: 975px;
+left: 600px;
+  }
+  .purple{
+    width: 1132px;
+    height: 320px;
+    background-color: #4D2C5E;
+    border-radius: 30px;
+    position: absolute;
+    left: 15%;
+    top: 1700px;
+  }
+  .last{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  }
+  .pur1{
+    color:#fff;
+    top: 70px;
+    left: 41%;
+    
+  }
+  .pur2{
+    color:#fff;
+    top: 160px;
+    left: 33%;
+    font-size: 20px;
+  }
+  .searchbar{
+    position: absolute;
+    top: -450px;
+    left: 27%;
+  }
+  

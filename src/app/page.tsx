@@ -1,101 +1,91 @@
 import Image from "next/image";
+import Searchbar from "./components/searchbar";
+import Feature from "./components/feature";
+import Card from "./components/cards";
+import Testimonial from "./components/testimonial";
+import Team from "./components/team";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="main">
+        <img src="/homebg.png" alt="" className="homebg" />
+        <img src="/OBJECTS.png" alt="" className="object" />
+        <h1 className="mainheading">
+          The <span className="orange">Smart</span>
+          <br></br> Choice For <span className="orange">Future</span>
+        </h1>
+        <p className="mainpara">
+          Elearn is a global training provider based across the UK that
+          <br />
+          specialises in accredited and bespoke training courses. We crush
+          <br />
+          the...
+        </p>
+        <Searchbar />
+      </div>
+      <div className="secpage">
+        <Feature />
+        <h2 className="sechead">Our Tracks</h2>
+        <p className="secpara">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <img src="/lightbulb.png" alt="" className="light" />
+        <img src="/arrow.png" alt="" className="arrow" />
+        <Card />
+      </div>
+      <div className="thp">
+        <img src="/girl.png" alt="" className="girl" />
+        <img src="/page2bg.png" alt="" className="page2bg" />
+        <h1 className="mainheading thphead">
+          Premium <span className="orange">Learning</span>
+          <br /> Experience
+        </h1>
+        <div className="bg1">
+          <img
+            src="/hrt.png
+          "
+            alt=""
+            className="hrt"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <h3 className="heading3">Easily Accessible</h3>
+        <p className="para3">
+          Learning Will fell Very Comfortable With Courslab.
+        </p>
+        <div className="bg2">
+          <img src="/jigsaw.png" alt="" className="hrt" />
+        </div>
+        <h3 className="heading4">Fun Learning Experience</h3>
+        <p className="para4">
+          Learning Will fell Very Comfortable With Courslab.
+        </p>
+      </div>
+      <div className="page4">
+        <h2 className="sechead pg1">What Students Say?</h2>
+        <p className="secpara pg2">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <img src="/pinkbrush.png" alt="" className="pinkbrush" />
+        <img src="/pinkbrush2.png" alt="" className="pinkbrush2" />
+        <Testimonial />
+        <h2 className="sechead pg3">Our Tracks</h2>
+        <p className="secpara pg4">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        <Team />
+        <div className="purple">
+          <img src="/last.png" alt="" className="last" />
+          <h2 className="sechead pur1">Our Tracks</h2>
+          <p className="secpara pur2">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+          <div className="searchbar">
+            {" "}
+            <Searchbar />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
