@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
       <footer className="font-sans tracking-wide bg-[#FDF8EE] py-10 px-10 absolute top-[4923px] w-[100%]">
@@ -8,36 +10,36 @@ export default function Footer() {
             </h4>
             <ul className="space-y-5">
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Our Story
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Newsroom
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -48,36 +50,36 @@ export default function Footer() {
             </h4>
             <ul className="space-y-5">
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Web Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Testing Automation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   AWS Development Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Mobile App Development
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -88,36 +90,36 @@ export default function Footer() {
             </h4>
             <ul className="space-y-5">
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Hubspot
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Marketo Integration Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Marketing Glossary
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   UIPath
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -128,36 +130,36 @@ export default function Footer() {
             </h4>
             <ul className="space-y-5">
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Accessibility
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-[#4D2C5E] text-[#606060] text-[15px] transition-all"
                 >
                   Learn more
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
