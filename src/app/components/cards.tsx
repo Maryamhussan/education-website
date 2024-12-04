@@ -3,7 +3,7 @@ import { Courses } from "@/data/course";
 export default function Card() {
   return (
     <div className="flex flex-wrap justify-center gap-6">
-      {Courses.map((course: any) => (
+      {Courses.map((course) => (
         <div
           key={course.id} // Added a unique key to avoid React warnings
           className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full py-6 max-w-sm rounded-lg font-[sans-serif] overflow-hidden   mt-[290px]"

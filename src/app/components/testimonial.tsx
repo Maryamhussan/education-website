@@ -5,7 +5,7 @@ export default function Testimonial() {
       <>
         {" "}
         <div className="flex flex-wrap justify-center gap-6">
-          {Testimonials.map((testimonial: any) => (
+          {Testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className="bg-white sm:p-8 p-2 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[416px] max-w-xl rounded-lg font-[sans-serif] overflow-hidden  mt-[500px]"
