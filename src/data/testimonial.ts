@@ -1,4 +1,4 @@
-export const Testimonials: any = [
+export const Testimonials = [
   {
     id: "1",
     title: "Finlay Kirk",

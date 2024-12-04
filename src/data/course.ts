@@ -1,4 +1,4 @@
-export const Courses: any = [
+export const Courses = [
   {
     id: "1",
     title: "Web Development Bootcamp",
