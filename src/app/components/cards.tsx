@@ -1,46 +1,69 @@
 import { Courses } from "@/data/course";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Card() {
+/**
+ * CourseCard Component
+ * A reusable sub-component for rendering individual course cards.
+ * Extracted to improve maintainability and readability.
+ */
+function CourseCard({ course }: { course: typeof Courses[0] }) {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
-      {Courses.map((course) => (
-        <div
-          key={course.id} // Added a unique key to avoid React warnings
-          className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full py-6 max-w-sm rounded-lg font-[sans-serif] overflow-hidden   mt-[290px]"
-        >
-          <div className="flex items-center gap-2 px-6">
-            <h3 className="text-xl text-gray-800 font-bold flex-1">
-              {course.title}
-            </h3>
-          </div>
+    <div
+      className="bg-white shadow-lg hover:shadow-2xl transition-all duration-300 w-full max-w-sm rounded-2xl font-[sans-serif] overflow-hidden flex flex-col border border-gray-100 hover:-translate-y-1"
+    >
+      {/* Course Image Container */}
+      <div className="relative h-64 w-full overflow-hidden">
+        <Image
+          src={course.image}
+          alt={course.title}
+          fill
+          className="object-cover transition-transform duration-500 hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
 
-          <div className="min-h-[300px]">
-            <img
-              src={course.image}
-              alt={course.title}
-              className="w-full h-[300px] my-6"
-            />
-          </div>
+      {/* Course Content */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl text-gray-900 font-bold mb-3 line-clamp-2 min-h-[3.5rem]">
+          {course.title}
+        </h3>
+        
+        <p className="text-sm text-gray-500 leading-relaxed mb-6 flex-grow line-clamp-3">
+          {course.description}
+        </p>
 
-          <div className="px-6">
-            <p className="text-sm text-gray-600 leading-relaxed">
-              {course.description}
-            </p>
-
-            <div className="mt-8 flex items-center flex-wrap gap-4">
-              <h3 className="text-xl text-gray-800 font-bold flex-1">
-                {course.price}
-              </h3>
-              <button
-                type="button"
-                className="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider bg-[#FF7426] hover:bg-blue-700 outline-none"
-              >
-                Join Course
-              </button>
-            </div>
-          </div>
+        {/* Price and Action Footer */}
+        <div className="mt-auto flex items-center justify-between gap-4 pt-4 border-t border-gray-50">
+          <span className="text-2xl text-[#4D2C5E] font-black">
+            {course.price}
+          </span>
+          
+          <Link
+            href={`/courses/${course.id}`}
+            className="px-6 py-2.5 rounded-full text-white text-sm font-semibold tracking-wide bg-[#FF7426] hover:bg-[#e6631f] transition-colors outline-none inline-flex items-center justify-center active:scale-95"
+          >
+            Join Course
+          </Link>
         </div>
-      ))}
+      </div>
     </div>
+  );
+}
+
+/**
+ * Cards Component
+ * Renders a grid of course cards using the Courses data.
+ * This is the main entry point for the courses section on the home page.
+ */
+export default function Cards() {
+  return (
+    <section className="py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        {Courses.map((course) => (
+          <CourseCard key={course.id} course={course} />
+        ))}
+      </div>
+    </section>
   );
 }
